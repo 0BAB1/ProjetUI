@@ -12,7 +12,61 @@
         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24" Name="mainText" FontFamily="Euphemia" Margin="100,10,0,0" Height="35" Width="423">
             <TextBlock.Text>Choisir Le Problème</TextBlock.Text>
         </TextBlock>
-           
-        
+
+        <!-- expander flexion-->
+        <Expander Header="Flexion" HorizontalAlignment="Left" Width="200" Margin="96,52,0,28" VerticalAlignment="Stretch">
+            <WrapPanel>
+                <WrapPanel VerticalAlignment="Stretch" Background="LightGray">
+                    <Border BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left" Margin="0 0 0 0" MinHeight="50" VerticalAlignment="Stretch" Width="1"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Expander Header="appui simple" Margin="25 10 0 0">
+                        <WrapPanel>
+                            <Button Width="100" Height="75">
+                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\1.png"></Image>
+                            </Button>
+                            <Button Width="100" Height="75">
+                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\2.png"></Image>
+                            </Button>
+                        </WrapPanel>
+                    </Expander>
+                    <Expander Header="double appuis" Margin="25 10 0 0">
+                        <WrapPanel>
+                            <Button Width="100" Height="75">
+                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\3.png"></Image>
+                            </Button>
+                            <Button Width="100" Height="75">
+                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\4.png"></Image>
+                            </Button>
+                            <Button Width="100" Height="75">
+                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\5.png"></Image>
+                            </Button>
+                        </WrapPanel>
+                    </Expander>
+                </WrapPanel>
+            </WrapPanel>
+        </Expander>
+
+        <!-- other expander (tractio)n, torsion, cis-->
+        <Expander Header="Autres" Margin="312,52,-312,-52" Width="150" VerticalAlignment="Stretch" HorizontalAlignment="Left">
+            <WrapPanel>
+                <WrapPanel VerticalAlignment="Stretch" Background="LightGray">
+                    <Border BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left" Margin="0 0 0 0" MinHeight="50" VerticalAlignment="Stretch" Width="1"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Button Height="25" Width="100">
+                        Traction
+                    </Button>
+                    <Button Height="25" Width="100">
+                        Torsion
+                    </Button>
+                    <Button Height="25" Width="100">
+                        cisaillement
+                    </Button>
+                </WrapPanel>
+            </WrapPanel>
+        </Expander>
+
+
     </Grid>
 </Window>
