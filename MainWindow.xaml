@@ -6,15 +6,20 @@
         xmlns:local="clr-namespace:ProjetUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="None">
+    
     <Grid Background="LightGray">
 
-        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24" Name="mainText" FontFamily="Euphemia" Margin="100,10,0,0" Height="35" Width="253">
-            <TextBlock.Text>PROJECT - Projet DUT</TextBlock.Text>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24" FontFamily="Euphemia" Margin="100,10,0,0" Height="35" Width="253">
+            <TextBlock.Text>La Théorie Des Poutres</TextBlock.Text>
         </TextBlock>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="12" FontFamily="Euphemia" Margin="100,40,0,0" Height="35" Width="253">
+            <TextBlock.Text>Par hugo babin</TextBlock.Text>
+        </TextBlock>
+
         <Rectangle HorizontalAlignment="Left" Height="460" VerticalAlignment="Center" Width="85" Fill="#FFD37300"/>
 
-        <Button Content="Commencer" HorizontalAlignment="Left" Margin="654,407,0,0" VerticalAlignment="Top" Height="30" Width="130" Name="buttonStart" Click="buttonStart_Click"/>
-        <Button Content="Quitter" HorizontalAlignment="Left" Margin="512,407,0,0" VerticalAlignment="Top" Height="30" Width="130" Name="buttonQuit" Click="buttonQuit_Click"/>
+        <Button Content="Commencer" HorizontalAlignment="Left" Margin="656,400,0,0" VerticalAlignment="Top" Height="30" Width="130" Name="buttonStart" Click="buttonStart_Click"/>
+        <Button Content="Quitter" HorizontalAlignment="Left" Margin="501,400,0,0" VerticalAlignment="Top" Height="30" Width="130" Name="buttonQuit" Click="buttonQuit_Click"/>
 
     </Grid>
 </Window>
