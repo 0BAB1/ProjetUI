@@ -13,8 +13,10 @@
             <TextBlock.Text>Module de Traction</TextBlock.Text>
         </TextBlock>
 
-        <Button Margin="620,14,11,401" Click="Button_Click">
+        <Button Margin="620,14,11,401" Name="buttonSection" Click="buttonSection_Click">
             Veuillez Choisir une section
         </Button>
+
+        <TextBlock Name="result" Margin="12,106,755,321">test</TextBlock>
     </Grid>
 </Window>

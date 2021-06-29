@@ -13,22 +13,24 @@ using System.Windows.Shapes;
 namespace ProjetUI
 {
     /// <summary>
-    /// Logique d'interaction pour Traction.xaml
+    /// Logique d'interaction pour SectionPrompt.xaml
     /// </summary>
-    public partial class Traction : Window
+    public partial class SectionPrompt : Window
     {
-        public Traction()
+        public SectionPrompt()
         {
             InitializeComponent();
         }
 
-        private void buttonSection_Click(object sender, RoutedEventArgs e)
+        public string result
         {
-            var dialog = new SectionPrompt();
-            if(dialog.ShowDialog() == true)
-            {
-                result.Text = dialog.result;
-            }
+            get { return toSubmit.Text; }
+            set { toSubmit.Text = value; }
+        }
+
+        private void buttonPrompt_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
         }
     }
 }
