@@ -13,20 +13,18 @@ using System.Windows.Shapes;
 namespace ProjetUI
 {
     /// <summary>
-    /// Logique d'interaction pour MenuWindow.xaml
+    /// Logique d'interaction pour Traction.xaml
     /// </summary>
-    public partial class MenuWindow : Window
+    public partial class Traction : Window
     {
-        public MenuWindow()
+        public Traction()
         {
             InitializeComponent();
         }
 
-        private void buttonTraction_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Traction nw = new Traction();
-            this.Close();
-            nw.Show();
+            
         }
     }
 }

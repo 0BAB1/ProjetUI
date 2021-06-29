@@ -10,11 +10,11 @@
         <!--Titles and top page cosmetics-->
         <Rectangle HorizontalAlignment="Left" Height="460" VerticalAlignment="Center" Width="85" Fill="#FFD37300"/>
         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="24" Name="mainText" FontFamily="Euphemia" Margin="100,10,0,0" Height="35" Width="423">
-            <TextBlock.Text>Choisir Le Problème</TextBlock.Text>
+            <TextBlock.Text>Choisir Le Type De Problème</TextBlock.Text>
         </TextBlock>
 
         <!-- expander flexion-->
-        <Expander Header="Flexion" HorizontalAlignment="Left" Width="200" Margin="96,52,0,28" VerticalAlignment="Stretch">
+        <Expander Header="Flexion" HorizontalAlignment="Left" Width="200" Margin="96,52,0,0" VerticalAlignment="Stretch">
             <WrapPanel>
                 <WrapPanel VerticalAlignment="Stretch" Background="LightGray">
                     <Border BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left" Margin="0 0 0 0" MinHeight="50" VerticalAlignment="Stretch" Width="1"/>
@@ -54,7 +54,7 @@
                     <Border BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left" Margin="0 0 0 0" MinHeight="50" VerticalAlignment="Stretch" Width="1"/>
                 </WrapPanel>
                 <WrapPanel>
-                    <Button Height="25" Width="100">
+                    <Button Height="25" Width="100" Name="buttonTraction" Click="buttonTraction_Click">
                         Traction
                     </Button>
                     <Button Height="25" Width="100">
