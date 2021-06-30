@@ -20,6 +20,22 @@ namespace ProjetUI
         public SectionPrompt()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        private int buttonMargin = 10;
+        private int buttonHeight = 40;
+
+        public int widthB
+        {
+            get { return ((int)this.Width-(5*this.buttonMargin))/4; }
+            set { this.buttonMargin = value; }
+        }
+
+        public int heightB
+        {
+            get { return this.buttonHeight; }
+            set { this.buttonHeight = value; }
         }
 
         public string result

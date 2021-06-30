@@ -11,15 +11,15 @@
         <TextBox Name="toSubmit" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"/>
 
         <!--Panel containing buttons for differents section-->
-        <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Top">
-            <Button Height="50" Width="50"></Button>
-            <Button Height="50" Width="50"></Button>
-            <Button Height="50" Width="50"></Button>
-            <Button Height="50" Width="50"></Button>
+        <WrapPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
         </WrapPanel>
-        
+
         <!--Panels to show or hide depending on the user's choice-->
-        
+
         <Button Name="buttonPrompt" Click="buttonPrompt_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Button.Content>valider</Button.Content>
             <Button.Width>100</Button.Width>
