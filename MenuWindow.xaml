@@ -23,23 +23,23 @@
                     <Expander Header="appui simple" Margin="25 10 0 0">
                         <WrapPanel>
                             <Button Width="100" Height="75">
-                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\1.png"></Image>
+                                <Image Source="/data/1.png"></Image>
                             </Button>
                             <Button Width="100" Height="75">
-                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\2.png"></Image>
+                                <Image Source="\data\2.png"></Image>
                             </Button>
                         </WrapPanel>
                     </Expander>
                     <Expander Header="double appuis" Margin="25 10 0 0">
                         <WrapPanel>
                             <Button Width="100" Height="75">
-                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\3.png"></Image>
+                                <Image Source="\data\3.png"></Image>
                             </Button>
                             <Button Width="100" Height="75">
-                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\4.png"></Image>
+                                <Image Source="\data\4.png"></Image>
                             </Button>
                             <Button Width="100" Height="75">
-                                <Image Source="C:\Users\formation1\source\repos\ProjetUI\data\5.png"></Image>
+                                <Image Source="\data\5.png"></Image>
                             </Button>
                         </WrapPanel>
                     </Expander>

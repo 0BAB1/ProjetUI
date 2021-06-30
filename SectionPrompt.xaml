@@ -5,11 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjetUI"
         mc:Ignorable="d"
-        Title="SectionPrompt" Height="450" Width="800" ResizeMode="NoResize">
+        Title="SectionPrompt" Height="450" Width="200" ResizeMode="NoResize">
 
     <Grid>
-        <TextBox Name="toSubmit" Margin="200,65,446,341"/>
-        <Button Name="buttonPrompt" Click="buttonPrompt_Click" Margin="325,315,194,91" >valider</Button>
+        <TextBox Name="toSubmit" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"/>
+
+        <!--Panel containing buttons for differents section-->
+        <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Button Height="50" Width="50"></Button>
+            <Button Height="50" Width="50"></Button>
+            <Button Height="50" Width="50"></Button>
+            <Button Height="50" Width="50"></Button>
+        </WrapPanel>
+        
+        <!--Panels to show or hide depending on the user's choice-->
+        
+        <Button Name="buttonPrompt" Click="buttonPrompt_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button.Content>valider</Button.Content>
+            <Button.Width>100</Button.Width>
+        </Button>
     </Grid>
 
 </Window>

@@ -7,7 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="data\" />
+    <None Remove="data\1.png" />
+    <None Remove="data\2.png" />
+    <None Remove="data\3.png" />
+    <None Remove="data\4.png" />
+    <None Remove="data\5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserControls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="data\1.png" />
+    <Resource Include="data\2.png" />
+    <Resource Include="data\3.png" />
+    <Resource Include="data\4.png" />
+    <Resource Include="data\5.png" />
   </ItemGroup>
 
 </Project>
