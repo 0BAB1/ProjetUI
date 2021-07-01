@@ -23,30 +23,66 @@ namespace ProjetUI
             this.DataContext = this;
         }
 
+        //buttons dimensions in general
         private int buttonMargin = 10;
-        private int buttonHeight = 40;
+        private int buttonHeight = 50;
+        private Thickness LeftMargin = new Thickness(10,0,0,0); //has to be equal to buttonMargin !
 
+
+        //to return a button width
         public int widthB
         {
-            get { return ((int)this.Width-(5*this.buttonMargin))/4; }
-            set { this.buttonMargin = value; }
+            get { return ((int)this.Width-(3*this.buttonMargin))/4; }
         }
 
+        //to return a buttton height
         public int heightB
         {
             get { return this.buttonHeight; }
-            set { this.buttonHeight = value; }
         }
 
-        public string result
+        //return the margin
+        public Thickness marginB
         {
-            get { return toSubmit.Text; }
-            set { toSubmit.Text = value; }
+            get { return this.LeftMargin; }
         }
 
         private void buttonPrompt_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = true;
+        }
+
+        //different menus on buttons click
+        private void buttonSquare_Click(object sender, RoutedEventArgs e)
+        {
+            this.emptySquare.Visibility = Visibility.Collapsed;
+            this.square.Visibility = Visibility.Visible;
+            this.circle.Visibility = Visibility.Collapsed;
+            this.emptyCircle.Visibility = Visibility.Collapsed;
+        }
+
+        private void buttonEmptySquare_Click(object sender, RoutedEventArgs e)
+        {
+            this.emptySquare.Visibility = Visibility.Visible;
+            this.square.Visibility = Visibility.Collapsed;
+            this.circle.Visibility = Visibility.Collapsed;
+            this.emptyCircle.Visibility = Visibility.Collapsed;
+        }
+
+        private void buttonCircle_Click(object sender, RoutedEventArgs e)
+        {
+            this.emptySquare.Visibility = Visibility.Collapsed;
+            this.square.Visibility = Visibility.Collapsed;
+            this.circle.Visibility = Visibility.Visible;
+            this.emptyCircle.Visibility = Visibility.Collapsed;
+        }
+
+        private void buttonEmptyCircle_Click(object sender, RoutedEventArgs e)
+        {
+            this.emptySquare.Visibility = Visibility.Collapsed;
+            this.square.Visibility = Visibility.Collapsed;
+            this.circle.Visibility = Visibility.Collapsed;
+            this.emptyCircle.Visibility = Visibility.Visible;
         }
     }
 }

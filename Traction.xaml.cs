@@ -27,7 +27,7 @@ namespace ProjetUI
             var dialog = new SectionPrompt();
             if(dialog.ShowDialog() == true)
             {
-                result.Text = dialog.result;
+                result.Text = "bg";
             }
         }
     }

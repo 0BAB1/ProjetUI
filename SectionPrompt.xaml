@@ -5,20 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjetUI"
         mc:Ignorable="d"
-        Title="SectionPrompt" Height="450" Width="200" ResizeMode="NoResize">
+        Title="SectionPrompt" Height="450" Width="250" ResizeMode="NoResize" WindowStyle="None">
 
-    <Grid>
-        <TextBox Name="toSubmit" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"/>
+    <Grid Background="LightGray">
 
         <!--Panel containing buttons for differents section-->
         <WrapPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
-            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
-            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
-            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
-            <Button Height="{Binding heightB}" Width="{Binding widthB}"/>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}" VerticalAlignment="Center" Margin="0 0 0 0" Name="buttonSquare" Click="buttonSquare_Click">
+            </Button>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}" VerticalAlignment="Center" Margin="{Binding marginB}" Name="buttonEmptySquare" Click="buttonEmptySquare_Click">
+            </Button>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}" VerticalAlignment="Center" Margin="{Binding marginB}" Name="buttonCircle" Click="buttonCircle_Click">
+            </Button>
+            <Button Height="{Binding heightB}" Width="{Binding widthB}" VerticalAlignment="Center" Margin="{Binding marginB}" x:Name="buttonEmptyCircle" Click="buttonEmptyCircle_Click">
+            </Button>
         </WrapPanel>
 
         <!--Panels to show or hide depending on the user's choice-->
+        <WrapPanel Name="square" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <WrapPanel>
+                <Label>a :</Label>
+                <TextBox Name="sectionH" Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Label>b :</Label>
+                <TextBox Name="sectionW" Width="200"></TextBox>
+            </WrapPanel>
+        </WrapPanel>
+
+        <WrapPanel Name="emptySquare" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <WrapPanel>
+                <Label>a :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Label>b :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Label>ep :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+        </WrapPanel>
+
+        <WrapPanel Name="circle" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <WrapPanel>
+                <Label>r :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+        </WrapPanel>
+
+        <WrapPanel Name="emptyCircle" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <WrapPanel>
+                <Label>r :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Label>ep :</Label>
+                <TextBox  Width="200"></TextBox>
+            </WrapPanel>
+        </WrapPanel>
 
         <Button Name="buttonPrompt" Click="buttonPrompt_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Button.Content>valider</Button.Content>
