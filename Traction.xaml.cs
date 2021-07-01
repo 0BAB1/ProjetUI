@@ -22,12 +22,14 @@ namespace ProjetUI
             InitializeComponent();
         }
 
+        private double m_lenght = 0;
+
         private void buttonSection_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new SectionPrompt();
             if(dialog.ShowDialog() == true)
             {
-                result.Text = "bg";
+                result.Text = dialog.result.ToString();
             }
         }
     }

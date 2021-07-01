@@ -17,6 +17,10 @@
             Veuillez Choisir une section
         </Button>
 
-        <TextBlock Name="result" Margin="12,106,755,321">test</TextBlock>
+        <TextBlock Name="result" Margin="101,42,534,390">Selectionnez une section</TextBlock>
+
+        <Label Margin="91,60,571,363">Longueur de la poutre :</Label>
+        <TextBox Text="{Binding lenght, UpdateSourceTrigger=PropertyChanged}" Margin="230,61,433,359"/>
+        <TextBlock Text="{Binding lenght, UpdateSourceTrigger=PropertyChanged}" Margin="463,50,240,364"></TextBlock>
     </Grid>
 </Window>

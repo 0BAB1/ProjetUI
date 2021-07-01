@@ -28,6 +28,13 @@ namespace ProjetUI
         private int buttonHeight = 50;
         private Thickness LeftMargin = new Thickness(10,0,0,0); //has to be equal to buttonMargin !
 
+        //we have to set a result to give to the requesting window
+        private double surf;
+
+        public double result
+        {
+            get { return this.surf; }
+        }
 
         //to return a button width
         public int widthB
@@ -84,5 +91,20 @@ namespace ProjetUI
             this.circle.Visibility = Visibility.Collapsed;
             this.emptyCircle.Visibility = Visibility.Visible;
         }
+
+        //submit buttons returns
+        private void submitSquare_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.surf = double.Parse(sectionH.Text) * double.Parse(sectionH.Text);
+                DialogResult = true;
+            }
+            catch
+            {
+                this.surf = 0;
+            }
+        }
+
     }
 }

@@ -31,6 +31,7 @@
                 <Label>b :</Label>
                 <TextBox Name="sectionW" Width="200"></TextBox>
             </WrapPanel>
+            <Button Name="submitSquare" Click="submitSquare_Click">valider</Button>
         </WrapPanel>
 
         <WrapPanel Name="emptySquare" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
@@ -46,6 +47,7 @@
                 <Label>ep :</Label>
                 <TextBox  Width="200"></TextBox>
             </WrapPanel>
+            <Button Name="submitEmptySquare">valider</Button>
         </WrapPanel>
 
         <WrapPanel Name="circle" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
@@ -53,6 +55,7 @@
                 <Label>r :</Label>
                 <TextBox  Width="200"></TextBox>
             </WrapPanel>
+            <Button Name="submitCircle">valider</Button>
         </WrapPanel>
 
         <WrapPanel Name="emptyCircle" VerticalAlignment="Center" HorizontalAlignment="Stretch" Visibility="Collapsed">
@@ -64,10 +67,11 @@
                 <Label>ep :</Label>
                 <TextBox  Width="200"></TextBox>
             </WrapPanel>
+            <Button Name="submitEmptyCircle">valider</Button>
         </WrapPanel>
 
         <Button Name="buttonPrompt" Click="buttonPrompt_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-            <Button.Content>valider</Button.Content>
+            <Button.Content>stop</Button.Content>
             <Button.Width>100</Button.Width>
         </Button>
     </Grid>
